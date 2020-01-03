@@ -2,7 +2,6 @@ package go_koans
 
 import (
 	"bytes"
-	"fmt"
 )
 
 func aboutCommonInterfaces() {
@@ -33,7 +32,6 @@ func aboutCommonInterfaces() {
 		if err != nil {
 		}
 		out.Write(portion)
-		fmt.Printf("%s", out.String())
 		assert(out.String() == "hello") // duplicate only a portion of the io.Reader
 	}
 }
